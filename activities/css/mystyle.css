@@ -1,2 +1,6 @@
  h1{color: #0000ff;}
  span{color: #ff0000;}
+ marquee {background-image: url("luffy.jpg") ;}
+ #rebel {color: pink;text-decoration: line-through;}
+ .luffy{background-image: url("luffy.jpg");height: 500px;width: 500px;}
+  #red{background-color: red;}
