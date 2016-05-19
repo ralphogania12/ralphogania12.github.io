@@ -1,11 +1,14 @@
 <html>
 	<head>
-		<!-- Bootstrap Core CSS -->
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom CSS -->
 		<link href="../css/toggle-sidebar.css" rel="stylesheet">
 	</head>
   <body>
+	<style>
+		*{
+			width: 80
+			%
+	</style>
       <script>
 
           function toNum(n){
@@ -32,14 +35,37 @@
               alert(res);
           }
       </script>
+		<div class="container">
+		<div class="row">
+		<div class="col-md-3">
       <form name="calc">
-          Num1: <input type="text" id="Num1"><br>
-          Num2: <input type="text" id="Num2"><br>
-    </form>
-    <button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
-	<button onclick="subtract(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
-	<button onclick="multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
-	<button onclick="divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
+          Num1: <input type="text" id="Num1" style="display: block; width: 50%;"><br>
+          Num2: <input type="text" id="Num2" style="display: block; width: 50%;"><br>
+	</form>
+		 </div>
+		 </div>
+		
+
+		<div class="row">
+        <div class="col-md-6">
+    
+    <button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)" class="btn btn-danger">Add</button>
+	</div>
+	<div class="col-md-6">
+	<button onclick="subtract(document.querySelector('#num1').value, document.querySelector('#num2').value)"class="btn btn-danger">Subtract</button>
+	</div>
+	</div>
+	<br>
+	 <div class="row">
+    <div class="col-md-6">
+	<button onclick="multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)"class="btn btn-danger">Multiply</button>
+	 </div>
+	    <div class="col-md-6">
+	<button onclick="divide(document.querySelector('#num1').value, document.querySelector('#num2').value)"class="btn btn-danger">Divide</button>
+		</div>
+	</div>
+     </div>
+</div>
 	
 		<!-- jQuery -->
 	<script src="../js/jquery.js"></script>
